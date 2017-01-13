@@ -2,41 +2,53 @@
 <html>
 
 <head>
-    <title> 演技大转盘 </title>
-    <link rel='stylesheet' href='./css/normalize.css'></link>
-    <style>
-    html, body, .bg {
-        width: 100%;
-        height: 100%;
-        font-family: '微软雅黑, 宋体, Arial';
-    }
-    .bg {
-        background-image: url(./images/bg.png);
-        background-size: 100% 100%;
-    }
-    .bg>h1 {
-        position: absolute;
-        top: 5%;
-        width: 100%;
-        font-size: 4em;
-        text-align: center;
-        color: #fff;
-    }
-    #game-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    </style>
+	<title> 演技大转盘 </title>
+	<link rel='stylesheet' href='./css/normalize.css'></link>
+	<link rel='stylesheet' href='./css/bttn.min.css'></link>
+	<style>
+		html,
+		body,
+		.bg {
+			width: 100%;
+			height: 100%;
+			font-family: '微软雅黑, 宋体, Arial';
+		}
+		
+		.bg {
+			background-image: url(./images/bg.png);
+			background-size: 100% 100%;
+		}
+		
+		.bg>h1 {
+			position: absolute;
+			top: 5%;
+			width: 100%;
+			font-size: 4em;
+			text-align: center;
+			color: #fff;
+		}
+		
+		#game-container {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		#btn {
+			position: absolute;
+			top: 100px;
+			left: 100px;
+			z-index: 9999;
+		}
+	</style>
 </head>
 
 <body>
-    <div class='bg'>
-        <h1>演技大转盘</h1>
-    </div>
-    <div id='game-container'></div>
-    <script src='./hilo-standalone.js'></script>
-    <script src='./build/index.js'></script>
+	<div class='bg'>
+		<button class='bttn-pill bttn-lg bttn-warning' id='btn'>抽奖</button>
+	</div>
+	<div id='game-container'></div>
+	<script src='./hilo-standalone.js'></script>
+	<script src='./build/index.js'></script>
 </body>
 
 </html>
