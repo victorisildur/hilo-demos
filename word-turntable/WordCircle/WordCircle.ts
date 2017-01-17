@@ -16,7 +16,7 @@ export class WordCircle {
         }
         if (theme === 'word') {
             this.icon = new Hilo.Bitmap(extend({}, iconProps, {
-                image: 'images/mouth.png'
+                image: 'images/mouth2.png'
             }));
         } else {
             this.icon = new Hilo.Bitmap(extend({}, iconProps, {

@@ -6,5 +6,6 @@ Demonstrating what hilo can do, how it is done, and where reefs hide.
 
 * whip-boxes: Hilo manipulated DOMElements
 * war-plane: Hilo manipulated Canvas Bitmaps
+* word-turntable: A turn table game
 * ...
 
